@@ -4,7 +4,7 @@
 # Álvaro Sánchez February-2015
 ################################################################################
 
-setwd("/media/DATA2/cursos/R/Getting and Cleaning Data/Project")
+setwd("/media/DATA2/cursos/R/Getting and Cleaning Data/Getting and Cleaning Data Project/")
 library(data.table)
 
 # 1. Merges the training an the test sets to create one data set
