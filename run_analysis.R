@@ -5,7 +5,7 @@
 ################################################################################
 
 setwd("/media/DATA2/cursos/R/Getting and Cleaning Data/Getting and Cleaning Data Project/")
-library(data.table)
+require(data.table,plyr)
 
 # 1. Merges the training an the test sets to create one data set
 
@@ -50,7 +50,6 @@ rm(ind,ind2)
 
 # 3. Uses descriptive activity names to name the activities in the data set
 
-library(plyr)
 
 activity_labels<-fread("./UCI HAR Dataset/activity_labels.txt")
 data$activity.V1<-as.factor(mapvalues(data$activity.V1,from=activity_labels$V1, 
@@ -95,4 +94,4 @@ for (i in 3:ncol(data2)){
 }
 rm(activity,activitylevels,dat,i,subject,subjectlevels)
 
-write.table(tidydata,"./tidy_data.txt")
+write.table(tidydata,"./tidy_data.txt",row.names=FALSE)
