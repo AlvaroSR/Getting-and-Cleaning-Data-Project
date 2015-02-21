@@ -1,11 +1,30 @@
 ################################################################################
 ## This file corresponds to PGetting and Cleaning Data Course Project
 #
+## Before running run_analysis.R
+# 
+# - The directory called UCI HAR Dataset must be stored in the same directory where
+#       the script is located. Do no change or modify any file in the directory, please.
+# - In the 7th line of the script, set your working directory where is going to 
+#       be saved the tidy data file. 
+# - **data.table** and **plyr** packages will be loaded.
+# - If you are working under WINDOWS you have to change file directions 
+#       in lines 31, 32, 34, 41, 42, 44, 57, 72, 85 and 115. 
+# 
+# 
+# **Notes:** 
+#         
+#- Due to overflow troubles it was impomsible to use **fread** over large data.
+# -run_analysis.R script developed under Ubuntu 14.04. It has not been tested 
+#under other OS.
+#
 # Álvaro Sánchez February-2015
 ################################################################################
 
 setwd("/media/DATA2/cursos/R/Getting and Cleaning Data/Getting and Cleaning Data Project/")
-require(data.table,plyr)
+library(data.table)
+library(plyr)
+
 
 # 1. Merges the training an the test sets to create one data set
 
