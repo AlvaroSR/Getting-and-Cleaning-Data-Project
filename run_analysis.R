@@ -5,7 +5,7 @@
 # 
 # - The directory called UCI HAR Dataset must be stored in the same directory where
 #       the script is located. Do no change or modify any file in the directory, please.
-# - In the 7th line of the script, set your working directory where is going to 
+# - In the 24th line of the script, set your working directory where is going to 
 #       be saved the tidy data file. 
 # - **data.table** and **plyr** packages will be loaded.
 # - If you are working under WINDOWS you have to change file directions 

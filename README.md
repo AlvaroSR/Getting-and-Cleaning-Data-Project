@@ -40,7 +40,7 @@ In this repository you will be able to find out all files involved in the course
 ## Before running run_analysis.R
 
 - The directory called UCI HAR Dataset must be stored in the same directory where the script is located. Do no change or modify any file in the directory, please.
-- In the 7th line of the script, set your working directory where is going to be saved the tidy data file. 
+- In the 24th line of the script, set your working directory where is going to be saved the tidy data file. 
 - **data.table** and **plyr** packages will be loaded.
 - If you are working under WINDOWS you have to change file directions in lines 31, 32, 34, 41, 42, 44, 57, 72, 85 and 115. 
 
